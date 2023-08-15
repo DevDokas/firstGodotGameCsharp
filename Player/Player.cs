@@ -23,4 +23,5 @@ public class Player : KinematicBody2D
 		
 		motion.y += 9.8f * delta;
 	}
+	//Oi anjo!
 }
