@@ -5,9 +5,9 @@ public class Player : KinematicBody2D
 {
 	[Export]
 	private const float MoveSpeed = 200.0f;
-	
 
-	
+
+
 
 	public override void _PhysicsProcess(float delta ) 
 	{
@@ -22,5 +22,7 @@ public class Player : KinematicBody2D
 		motion.y = 0;
 		
 		motion.y += 9.8f * delta;
+
+		//dokai delicioso
 	}
 }
