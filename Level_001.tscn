@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Pixel Adventure/Main Characters/Ninja Frog/Idle (32x32).png" type="Texture" id=1]
 [ext_resource path="res://Player/Player.cs" type="Script" id=2]
 [ext_resource path="res://icon.png" type="Texture" id=3]
+[ext_resource path="res://png-clipart-computer-icons-ruler-ruler-angle-text-thumbnail.png" type="Texture" id=4]
 
 [sub_resource type="Animation" id=1]
 length = 0.001
@@ -51,7 +52,7 @@ script = ExtResource( 2 )
 texture = ExtResource( 1 )
 hframes = 11
 
-[node name="animation" type="AnimationPlayer" parent="Player"]
+[node name="idle" type="AnimationPlayer" parent="Player"]
 autoplay = "idle"
 anims/RESET = SubResource( 1 )
 anims/idle = SubResource( 2 )
@@ -70,3 +71,9 @@ shape = SubResource( 3 )
 position = Vector2( 160, 244 )
 scale = Vector2( 6.64063, 2.14844 )
 texture = ExtResource( 3 )
+
+[node name="Png-clipart-computer-icons-ruler-ruler-angle-text-thumbnail" type="Sprite" parent="."]
+position = Vector2( 185, 42 )
+scale = Vector2( 0.793103, 0.764368 )
+z_index = -1
+texture = ExtResource( 4 )
