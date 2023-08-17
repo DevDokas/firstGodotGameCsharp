@@ -7,3 +7,12 @@ C:\GODOT\Godot\.mono\temp\bin\Debug\Godot.dll
 C:\GODOT\Godot\.mono\temp\bin\Debug\Godot.pdb
 C:\GODOT\Godot\.mono\temp\obj\Debug\Godot.dll
 C:\GODOT\Godot\.mono\temp\obj\Debug\Godot.pdb
+C:\GODOT\PROJETOS\firstGodotGameCsharp\.mono\temp\bin\Debug\Godot.dll
+C:\GODOT\PROJETOS\firstGodotGameCsharp\.mono\temp\bin\Debug\Godot.pdb
+C:\GODOT\PROJETOS\firstGodotGameCsharp\.mono\temp\obj\Debug\Godot.csproj.AssemblyReference.cache
+C:\GODOT\PROJETOS\firstGodotGameCsharp\.mono\temp\obj\Debug\Godot.GeneratedMSBuildEditorConfig.editorconfig
+C:\GODOT\PROJETOS\firstGodotGameCsharp\.mono\temp\obj\Debug\Godot.AssemblyInfoInputs.cache
+C:\GODOT\PROJETOS\firstGodotGameCsharp\.mono\temp\obj\Debug\Godot.AssemblyInfo.cs
+C:\GODOT\PROJETOS\firstGodotGameCsharp\.mono\temp\obj\Debug\Godot.csproj.CoreCompileInputs.cache
+C:\GODOT\PROJETOS\firstGodotGameCsharp\.mono\temp\obj\Debug\Godot.dll
+C:\GODOT\PROJETOS\firstGodotGameCsharp\.mono\temp\obj\Debug\Godot.pdb
