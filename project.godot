@@ -20,7 +20,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Godot"
+config/name="First Game"
 run/main_scene="res://Level_001.tscn"
 config/icon="res://icon.png"
 
