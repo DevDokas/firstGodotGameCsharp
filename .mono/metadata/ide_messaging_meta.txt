@@ -1,2 +1,2 @@
-﻿55386
-C:/GODOT/GODOT.exe
+﻿58333
+C:/GODOT/Godot.exe
