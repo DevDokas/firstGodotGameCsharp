@@ -1,9 +1,10 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Pixel Adventure/Main Characters/Ninja Frog/Idle (32x32).png" type="Texture" id=1]
 [ext_resource path="res://Player/Player.cs" type="Script" id=2]
 [ext_resource path="res://icon.png" type="Texture" id=3]
 [ext_resource path="res://Pixel Adventure/Main Characters/Ninja Frog/Run (32x32).png" type="Texture" id=4]
+[ext_resource path="res://Tilemap/new_tileset.tres" type="TileSet" id=5]
 
 [sub_resource type="CapsuleShape2D" id=4]
 height = 4.0
@@ -114,3 +115,9 @@ texture = ExtResource( 3 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Terrain"]
 position = Vector2( 158, 185 )
 shape = SubResource( 3 )
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource( 5 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 65519, 0, 65544, 131055, 0, 65544, 196591, 0, 65544, 262127, 0, 65544, 327663, 0, 65544, 393199, 0, 65544, 458735, 0, 65544, 524271, 0, 65544, 589807, 0, 65544, 589821, 0, 6, 589822, 0, 6, 589823, 0, 6, 524288, 0, 6, 524289, 0, 6, 524290, 0, 6, 524291, 0, 6, 524292, 0, 6, 524293, 0, 6, 524294, 0, 6, 524295, 0, 6, 524296, 0, 6, 524297, 0, 6, 524298, 0, 6, 524299, 0, 6, 524300, 0, 6, 524301, 0, 6, 524302, 0, 6, 524303, 0, 6, 524304, 0, 6, 524305, 0, 6, 524306, 0, 6, 524307, 0, 6, 524308, 0, 6, 524309, 0, 6, 655343, 0, 65544, 720879, 0, 65544 )

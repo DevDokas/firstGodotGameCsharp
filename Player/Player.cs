@@ -67,7 +67,24 @@ public class Player : KinematicBody2D
 				motion.y += jumpForce/maxJumpSpeed;
 				motion.x *= 1.75f;
 			}
-		} else {
+		} else if (IsOnWall()) {
+			jumpsLeft = 0;
+			if (jumpsLeft > 0 && Input.IsActionJustPressed("jump")) {
+				jumpsLeft--;
+				motion.y += jumpForce;
+				motion.y += gravity * delta * 2;
+/* 				if (!IsOnFloor() && !IsOnWall()) {
+					jumpsLeft = 1;
+					if (jumpsLeft > 0 && Input.IsActionJustPressed("jump")) {
+						jumpsLeft--;
+						motion.y = jumpForce;
+					}	
+				} */
+			}
+			motion.y += gravity * delta * 2;
+			jumpsLeft = 1;
+		} 
+		else {
 			motion.y += gravity * delta * 2;
 			if (jumpsLeft > 0 && Input.IsActionJustPressed("jump")) {
 				jumpsLeft--;
