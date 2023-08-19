@@ -1,14 +1,17 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Pixel Adventure/Main Characters/Ninja Frog/Idle (32x32).png" type="Texture" id=1]
 [ext_resource path="res://Player/Player.cs" type="Script" id=2]
 [ext_resource path="res://icon.png" type="Texture" id=3]
-[ext_resource path="res://png-clipart-computer-icons-ruler-ruler-angle-text-thumbnail.png" type="Texture" id=4]
+[ext_resource path="res://Pixel Adventure/Main Characters/Ninja Frog/Run (32x32).png" type="Texture" id=4]
+
+[sub_resource type="CapsuleShape2D" id=4]
+height = 4.0
 
 [sub_resource type="Animation" id=1]
 length = 0.001
 tracks/0/type = "value"
-tracks/0/path = NodePath("texture:frame")
+tracks/0/path = NodePath("Idle:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -19,12 +22,24 @@ tracks/0/keys = {
 "update": 0,
 "values": [ 0 ]
 }
+tracks/1/type = "value"
+tracks/1/path = NodePath("Walk:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0 ]
+}
 
 [sub_resource type="Animation" id=2]
 resource_name = "idle"
 loop = true
 tracks/0/type = "value"
-tracks/0/path = NodePath("texture:frame")
+tracks/0/path = NodePath("Idle:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/imported = false
@@ -36,11 +51,25 @@ tracks/0/keys = {
 "values": [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 ]
 }
 
-[sub_resource type="CapsuleShape2D" id=4]
-height = 4.0
+[sub_resource type="Animation" id=5]
+resource_name = "walk"
+length = 1.1
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Walk:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+}
 
 [sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 170, 10 )
+extents = Vector2( 663, 10 )
 
 [node name="Level_001" type="Node2D"]
 
@@ -48,32 +77,40 @@ extents = Vector2( 170, 10 )
 position = Vector2( 155, 79 )
 script = ExtResource( 2 )
 
-[node name="texture" type="Sprite" parent="Player"]
-texture = ExtResource( 1 )
-hframes = 11
-
-[node name="idle" type="AnimationPlayer" parent="Player"]
-autoplay = "idle"
-anims/RESET = SubResource( 1 )
-anims/idle = SubResource( 2 )
+[node name="Camera2D" type="Camera2D" parent="Player"]
+offset = Vector2( 0, -25 )
+current = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
 position = Vector2( 0, 3 )
 shape = SubResource( 4 )
 
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
+[node name="AnimaIdle" type="AnimationPlayer" parent="Player"]
+autoplay = "idle"
+anims/RESET = SubResource( 1 )
+anims/idle = SubResource( 2 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2( 160, 185 )
-shape = SubResource( 3 )
+[node name="AnimaWalk" type="AnimationPlayer" parent="Player"]
+autoplay = "walk"
+anims/walk = SubResource( 5 )
 
-[node name="Icon" type="Sprite" parent="."]
-position = Vector2( 160, 244 )
-scale = Vector2( 6.64063, 2.14844 )
+[node name="Idle" type="Sprite" parent="Player"]
+position = Vector2( 1, 0 )
+texture = ExtResource( 1 )
+hframes = 11
+
+[node name="Walk" type="Sprite" parent="Player"]
+visible = false
+texture = ExtResource( 4 )
+hframes = 12
+
+[node name="Terrain" type="StaticBody2D" parent="."]
+
+[node name="Icon" type="Sprite" parent="Terrain"]
+position = Vector2( 156.5, 292.125 )
+scale = Vector2( 20.7344, 3.65234 )
 texture = ExtResource( 3 )
 
-[node name="Png-clipart-computer-icons-ruler-ruler-angle-text-thumbnail" type="Sprite" parent="."]
-position = Vector2( 185, 42 )
-scale = Vector2( 0.793103, 0.764368 )
-z_index = -1
-texture = ExtResource( 4 )
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Terrain"]
+position = Vector2( 158, 185 )
+shape = SubResource( 3 )
