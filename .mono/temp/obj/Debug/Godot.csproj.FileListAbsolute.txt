@@ -16,3 +16,12 @@ C:\GODOT\PROJETOS\firstGodotGameCsharp\.mono\temp\obj\Debug\Godot.AssemblyInfo.c
 C:\GODOT\PROJETOS\firstGodotGameCsharp\.mono\temp\obj\Debug\Godot.csproj.CoreCompileInputs.cache
 C:\GODOT\PROJETOS\firstGodotGameCsharp\.mono\temp\obj\Debug\Godot.dll
 C:\GODOT\PROJETOS\firstGodotGameCsharp\.mono\temp\obj\Debug\Godot.pdb
+D:\DDM-Game\firstGodotGameCsharp\.mono\temp\bin\Debug\Godot.dll
+D:\DDM-Game\firstGodotGameCsharp\.mono\temp\bin\Debug\Godot.pdb
+D:\DDM-Game\firstGodotGameCsharp\.mono\temp\obj\Debug\Godot.csproj.AssemblyReference.cache
+D:\DDM-Game\firstGodotGameCsharp\.mono\temp\obj\Debug\Godot.GeneratedMSBuildEditorConfig.editorconfig
+D:\DDM-Game\firstGodotGameCsharp\.mono\temp\obj\Debug\Godot.AssemblyInfoInputs.cache
+D:\DDM-Game\firstGodotGameCsharp\.mono\temp\obj\Debug\Godot.AssemblyInfo.cs
+D:\DDM-Game\firstGodotGameCsharp\.mono\temp\obj\Debug\Godot.csproj.CoreCompileInputs.cache
+D:\DDM-Game\firstGodotGameCsharp\.mono\temp\obj\Debug\Godot.dll
+D:\DDM-Game\firstGodotGameCsharp\.mono\temp\obj\Debug\Godot.pdb
