@@ -26,7 +26,7 @@ public class Player : KinematicBody2D
 		jumpSprite.Visible = false;
 
 		previousX = GlobalPosition.x;
-		Console.WriteLine(previousX);
+		GD.Print(previousX);
 	}
 
 	public override void _PhysicsProcess(float delta ) 
@@ -72,10 +72,6 @@ public class Player : KinematicBody2D
 			if (Input.IsActionPressed("dash")) {
 				motion.x *= 1.75f;
 			}
-			/* if (Input.IsActionPressed("dash") && Input.IsActionPressed("jump")) {
-				motion.y += jumpForce/maxJumpSpeed;
-				motion.x *= 1.75f;
-			} */
 		} else if (IsOnWall()) {
 			jumpsLeft = 0;
 			if (jumpsLeft > 0 && Input.IsActionJustPressed("jump")) {

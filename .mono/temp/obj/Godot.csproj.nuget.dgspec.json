@@ -1,21 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\DDM-Game\\firstGodotGameCsharp\\Godot.csproj": {}
+    "C:\\GODOT\\Godot\\Godot.csproj": {}
   },
   "projects": {
-    "D:\\DDM-Game\\firstGodotGameCsharp\\Godot.csproj": {
+    "C:\\GODOT\\Godot\\Godot.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\DDM-Game\\firstGodotGameCsharp\\Godot.csproj",
+        "projectUniqueName": "C:\\GODOT\\Godot\\Godot.csproj",
         "projectName": "Godot",
-        "projectPath": "D:\\DDM-Game\\firstGodotGameCsharp\\Godot.csproj",
-        "packagesPath": "C:\\Users\\T-Gamer\\.nuget\\packages\\",
-        "outputPath": "D:\\DDM-Game\\firstGodotGameCsharp\\.mono\\temp\\obj\\",
+        "projectPath": "C:\\GODOT\\Godot\\Godot.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\GODOT\\Godot\\.mono\\temp\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "D:\\DDM-Game\\firstGodotGameCsharp\\NuGet.Config",
-          "C:\\Users\\T-Gamer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\GODOT\\Godot\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

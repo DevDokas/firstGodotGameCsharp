@@ -6,7 +6,7 @@ public class EnemySkull : KinematicBody2D
 	private Sprite idleSprite;
 	private Sprite walkSprite;
 	private Sprite atackSprite;
-	private const float moveSpeed = 75;
+	private const float moveSpeed = 60;
 	private const float gravity = 100;
 	private float previousX;
 	private bool isFacingRight = true;
@@ -35,7 +35,7 @@ public class EnemySkull : KinematicBody2D
 		} else if(IsOnCeiling()){
 
 		} else{
-
+			motion.y += gravity * delta * 2; 
 		}
 
 		motion = MoveAndSlide(motion);
