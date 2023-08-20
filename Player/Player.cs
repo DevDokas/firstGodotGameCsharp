@@ -14,7 +14,7 @@ public class Player : KinematicBody2D
 	private float previousX;
 	private bool isFacingRight = true;
 
-    private Vector2 motion = Vector2.Zero;
+	private Vector2 motion = Vector2.Zero;
 
 	public override void _Ready() {
 		idleSprite = GetNode<Sprite>("Idle");

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7JFZusIgMy1//i/4lms4rcH+7uXqg4gMMI8Y2vbb3xiLUeUYKbVUJ2YzTlsz8tPAPKQINIJjDslN0jChmoNBng==",
+  "dgSpecHash": "dTH/+eRLRbp66SsZQusqFcyLOeAtUzWw6mkGvtya7YsNs1G4CxCZaeW8aEJv5L4cD/8Vw13c9yuNJGyK7ta8Fg==",
   "success": true,
-  "projectFilePath": "C:\\GODOT\\Godot\\Godot.csproj",
+  "projectFilePath": "D:\\DDM-Game\\firstGodotGameCsharp\\Godot.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
