@@ -1087,6 +1087,7 @@ script = ExtResource( 7 )
 script = ExtResource( 2 )
 
 [node name="Player" parent="." instance=ExtResource( 1 )]
+position = Vector2( -107, -165 )
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource( 6 )
