@@ -6,7 +6,7 @@ public class EnemySkull : KinematicBody2D
 	private Sprite idleSprite;
 	private Sprite walkSprite;
 	private Sprite atackSprite;
-	private const float moveSpeed = 60;
+	private const float moveSpeed = 40;
 	private const float gravity = 100;
 	private float previousX;
 	private bool isFacingRight = true;
@@ -20,6 +20,8 @@ public class EnemySkull : KinematicBody2D
 		player = GetNode<KinematicBody2D>("/root/Level_001/Player");
 		idleSprite = GetNode<Sprite>("Idle");
 		
+		//Connect("",this,"");
+
 		idleSprite.Visible = true;
 		previousX = GlobalPosition.x;
 	}

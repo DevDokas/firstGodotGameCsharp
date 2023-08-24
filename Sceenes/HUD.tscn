@@ -1,0 +1,13 @@
+[gd_scene format=2]
+
+[node name="HUD" type="CanvasLayer"]
+
+[node name="Score" type="Label" parent="."]
+margin_left = 286.0
+margin_top = 9.0
+margin_right = 310.0
+margin_bottom = 23.0
+text = "0"
+align = 2
+valign = 1
+percent_visible = -1.0

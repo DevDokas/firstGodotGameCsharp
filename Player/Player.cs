@@ -3,19 +3,21 @@ using System;
 
 public class Player : KinematicBody2D
 {
+	//
 	private Sprite idleSprite;
 	private Sprite walkSprite;
 	private Sprite jumpSprite;
 	private const float moveSpeed = 100;
 	private const float gravity = 100;
 	private const float jumpForce = -100;
-	private const float maxJumpSpeed = 7;
 	private int jumpsLeft = 2;
 	private float previousX;
 	private bool isFacingRight = true;
 
+	//
 	private Vector2 motion = Vector2.Zero;
 
+	//
 	public override void _Ready() {
 		idleSprite = GetNode<Sprite>("Idle");
 		walkSprite = GetNode<Sprite>("Walk");
@@ -26,7 +28,6 @@ public class Player : KinematicBody2D
 		jumpSprite.Visible = false;
 
 		previousX = GlobalPosition.x;
-		GD.Print(previousX);
 	}
 
 	public override void _PhysicsProcess(float delta ) 
