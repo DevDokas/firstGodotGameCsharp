@@ -99,6 +99,5 @@ public class Player : KinematicBody2D
 		}
 
 		motion = MoveAndSlide(motion, Vector2.Up);
-		
 	}
 }

@@ -34,8 +34,8 @@ tracks/0/keys = {
 "values": [ 0 ]
 }
 
-[sub_resource type="RectangleShape2D" id=37]
-extents = Vector2( 13.5, 12.75 )
+[sub_resource type="CircleShape2D" id=37]
+radius = 13.0
 
 [node name="EnemySkull" type="KinematicBody2D"]
 position = Vector2( 321, 107 )
@@ -45,7 +45,6 @@ collision_mask = 11
 [node name="Idle" type="Sprite" parent="."]
 texture = ExtResource( 1 )
 hframes = 8
-frame = 4
 
 [node name="AnimaIdle" type="AnimationPlayer" parent="."]
 autoplay = "Idle"
@@ -53,5 +52,5 @@ anims/Idle = SubResource( 35 )
 anims/RESET = SubResource( 36 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 0.5, 1.25 )
+position = Vector2( 0, 1 )
 shape = SubResource( 37 )

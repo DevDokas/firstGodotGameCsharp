@@ -19,16 +19,19 @@ public class EnemySkull : KinematicBody2D
 	public override void _Ready(){
 		player = GetNode<KinematicBody2D>("/root/Level_001/Player");
 		idleSprite = GetNode<Sprite>("Idle");
-		
-		//Connect("",this,"");
 
 		idleSprite.Visible = true;
 		previousX = GlobalPosition.x;
 	}
+
 	public override void _PhysicsProcess(float delta){
 
 		Vector2 directionToPlayer = (player.Position - Position).Normalized();
 		motion = directionToPlayer * moveSpeed;
+/* 
+		if(){
+
+		} */
 
 		if(IsOnFloor()){
 			// motion.x = playerPosition.x * moveSpeed;

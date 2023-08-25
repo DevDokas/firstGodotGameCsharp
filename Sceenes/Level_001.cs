@@ -9,6 +9,8 @@ public class Level_001 : Node2D
     public override void _Ready()
     {   
         GetNode<Area2D>("/root/Level_001/Apple").Connect("Coletado",this,"_on_Coletado");
+        GetNode<Area2D>("/root/Level_001/Apple2").Connect("Coletado",this,"_on_Coletado");
+        GetNode<Area2D>("/root/Level_001/Apple3").Connect("Coletado",this,"_on_Coletado");
         hud = GetNode<HUD>("HUD");
         new_game();
 
